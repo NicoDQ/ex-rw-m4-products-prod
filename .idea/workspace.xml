@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c9e1dee-cd67-46bd-87ce-e229fe0963b0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/utec/productservice/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/utec/productservice/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/utec/productservice/configuration/OpenApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/utec/productservice/configuration/OpenApiConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +201,7 @@
       <workItem from="1749818314492" duration="97000" />
       <workItem from="1749818897504" duration="277000" />
       <workItem from="1749819225000" duration="42000" />
-      <workItem from="1749825050218" duration="543000" />
+      <workItem from="1749825050218" duration="793000" />
     </task>
     <servers />
   </component>
