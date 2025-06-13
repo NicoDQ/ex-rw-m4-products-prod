@@ -1,0 +1,7 @@
+org\utec\productservice\security\SecurityConfig.class
+org\utec\productservice\configuration\OpenApiConfig.class
+org\utec\productservice\controller\ProductController.class
+org\utec\productservice\model\Product.class
+org\utec\productservice\service\ProductService.class
+org\utec\productservice\repository\ProductRepository.class
+org\utec\productservice\ProductServiceApplication.class
