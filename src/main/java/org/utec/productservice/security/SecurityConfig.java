@@ -31,8 +31,6 @@ public class SecurityConfig {
                         .anyRequest().authenticated()
 //                        .anyRequest().denyAll()
                 )
-                // cors
-                .cors(Customizer.withDefaults())
                 .oauth2ResourceServer(oauth2 -> oauth2
                         .jwt(Customizer.withDefaults())
                 );
@@ -45,23 +43,5 @@ public class SecurityConfig {
         byte[] keyBytes = secretkey.getBytes();
         SecretKey key = new SecretKeySpec(keyBytes, 0, keyBytes.length, "HmacSHA256");
         return NimbusJwtDecoder.withSecretKey(key).build();
-    }
-
-    @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
-        CorsConfiguration configuration = new CorsConfiguration();
-        // Permitir Swagger en producción y frontend local
-        configuration.setAllowedOrigins(List.of(
-                "https://test-app-production-4e3d.up.railway.app",
-                "http://localhost:8080"
-        ));
-//        configuration.setAllowedOrigins(List.of("*")); // Cambia "*" por dominios específicos si querés restringir
-        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-        configuration.setAllowedHeaders(List.of("*")); // O especificá: "Authorization", "Content-Type", etc.
-        configuration.setAllowCredentials(true); // solo si necesitás cookies/autenticación cruzada
-
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", configuration);
-        return source;
     }
 }
